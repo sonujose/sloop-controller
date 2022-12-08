@@ -1,0 +1,6 @@
+apiVersion: controller.sloop.io/v1
+kind: SloopController
+metadata:
+  name: sloopcontroller-sample
+spec:
+  # TODO(user): Add fields here

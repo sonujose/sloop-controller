@@ -1,0 +1,16 @@
+domain: sloop.io
+layout:
+- go.kubebuilder.io/v4-alpha
+projectName: sloop-controller
+repo: sloop.io/ctrl
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: sloop.io
+  group: controller
+  kind: SloopController
+  path: sloop.io/ctrl/api/v1
+  version: v1
+version: "3"
