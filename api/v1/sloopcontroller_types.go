@@ -28,14 +28,15 @@ type SloopControllerSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of SloopController. Edit sloopcontroller_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	Type string `json:"type,omitempty"`
 }
 
 // SloopControllerStatus defines the observed state of SloopController
 type SloopControllerStatus struct {
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
+	// LastSynced - last reconcile for consolidation
+	LastSynced metav1.Time `json:"lastSynced"`
 }
 
 //+kubebuilder:object:root=true
